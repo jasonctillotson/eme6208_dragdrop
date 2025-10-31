@@ -39,7 +39,7 @@ li#indicateDestination {
 	border: 2px solid #333;              /* thicker, dark border */
 	padding: 10px 12px;                  /* more internal space */
 	margin-bottom: 8px;                  /* more spacing between boxes */
-	cursor: grab;                        /* updated cursor */
+	cursor: drag;                        /* updated cursor */
 	font-size: 16px;                     /* larger text */
 	line-height: 20px;
 	border-radius: 8px;                  /* rounded corners */
@@ -73,7 +73,17 @@ li#indicateDestination {
 	
 	
 	/* LEFT COLUMN CSS */
-	div#dhtmlgoodies_listOfItems{	/* Left column "Available students" */
+
+	#dhtmlgoodies_listOfItems ul li {
+    	padding: 5px 10px;       /* Smaller padding */
+	    font-size: 14px;         /* Smaller text */
+    	cursor: grab;            /* Show grabbing hand */
+	    border-radius: 5px;      /* Optional: rounded corners */
+    	width: auto;             /* Adjust width automatically */
+    	box-sizing: border-box;
+	}
+
+	div#dhtmlgoodies_listOfItems{	
 		
 		float:left;
 		padding-left:10px;
