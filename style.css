@@ -122,6 +122,12 @@ li#indicateDestination {
 	}
 	
 	/* Start main container CSS */
+
+	#dhtmlgoodies_mainContainer div{
+    	display: inline-block;      /* Make columns sit next to each other */
+    	vertical-align: top;        /* Align top */
+    	width: 220px;               /* Adjust column width */
+    	margin-right: 10px;         /* Space between columns */
 	
 	div#dhtmlgoodies_mainContainer{	/* Right column DIV */
 		width:590px;
