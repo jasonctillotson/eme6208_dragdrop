@@ -13,15 +13,15 @@
 	
 	
 	/* VARIABLES YOU COULD MODIFY */
-	var boxSizeArray = [3,3,3,3,3,3,3];	// Array indicating how many items there is room for in the right column ULs
+	var boxSizeArray = [4,4,4,4,4,4,4];	// Array indicating how many items there is room for in the right column ULs
 	
-	var arrow_offsetX = -5;	// Offset X - position of small arrow
-	var arrow_offsetY = 0;	// Offset Y - position of small arrow
+	var arrow_offsetX = -10;	// Offset X - position of small arrow
+	var arrow_offsetY = 1;	// Offset Y - position of small arrow
 	
-	var arrow_offsetX_firefox = -6;	// Firefox - offset X small arrow
-	var arrow_offsetY_firefox = -13; // Firefox - offset Y small arrow
+	var arrow_offsetX_firefox = -10;	// Firefox - offset X small arrow
+	var arrow_offsetY_firefox = -15; // Firefox - offset Y small arrow
 	
-	var verticalSpaceBetweenListItems = 3;	// Pixels space between one <li> and next	
+	var verticalSpaceBetweenListItems = 5;	// Pixels space between one <li> and next	
 											// Same value or higher as margin bottom in CSS for #dhtmlgoodies_dragDropContainer ul li,#dragContent li
 	
 											
@@ -30,12 +30,12 @@
 	var indicateDestionationByUseOfArrow = true;	// Display arrow to indicate where object will be dropped(false = use rectangle)
 	
 	
-	var lockedAfterDrag = false;	/* Lock items after they have been dragged, i.e. the user get's only one shot for the correct answer */
+	var lockedAfterDrag = true;	/* Lock items after they have been dragged, i.e. the user get's only one shot for the correct answer */
 	
 	
 	/* END VARIABLES YOU COULD MODIFY */
 	
-	var dragDropTopContainer = false;
+	var dragDropTopContainer = true;
 	var dragTimer = -1;
 	var dragContentObj = false;
 	var contentToBeDragged = false;	// Reference to dragged <li>
@@ -98,7 +98,7 @@
 	
 	function everythingIsCorrect()
 	{
-		alert('Congratulations! Everything is correct');		
+		alert('Great work! You nailed it!');		
 	}
 	
 	
@@ -373,8 +373,8 @@
 	window.onload = initDragDropScript;
 	</script>
 </head><body>
-<h1 align="center">Learning Theories</h1>
-<p>Drag-n-drop concepts from the column in the appropriate Learning Theory box. Each box can contain only <span class="style1">3 items</span>.</p>
+<h1 align="center">Career Development Resources</h1>
+<p> Can you correctly assign each resource to the career development topic it supports? Each topic can only contain <span class="style1">4 resources</span>.</p>
 <div id="dhtmlgoodies_dragDropContainer">
 	<div id="topBar">
 	<div style="padding-bottom: 5px; width: 728px; height: 1px;">
@@ -385,28 +385,35 @@
 		</div>
 	<div id="dhtmlgoodies_listOfItems">
 		<div class="">
-			<p>Concepts/Names</p>		
+			<p>Resources</p>		
 		<ul id="allItems">
 			
 			
-		<li id="node7" groupid="box2">Working Memory</li><li class="" id="node15" groupid="box3">Knowledge building</li><li class="" id="node19" groupid="box1">Skinner</li>
-		<li id="node9" groupid="box1">Stimulus</li><li class="" id="node10" groupid="box2">Rehearsal</li><li class="" id="node8" groupid="box3">Piaget</li><li id="node3" groupid="box2">Rehearsal</li><li id="node2" groupid="box3">Vygotsky</li><li id="node16" groupid="box1">Reinforcement</li></ul>
+		<li id="node7" groupid="box2">C.H.O.M.P</li>
+		<li class="" id="node15" groupid="box3">Quinnica</li>
+		<li class="" id="node19" groupid="box1">Forage</li>
+		<li id="node9" groupid="box1">Gators For Good</li>
+		<li class="" id="node10" groupid="box2">Career Insights</li>
+		<li class="" id="node8" groupid="box3">Gator Network</li>
+		<li id="node3" groupid="box2">CareerHub</li>
+		<li id="node2" groupid="box3">What Can I Do With This Major?</li>
+		<li id="node16" groupid="box1">Experiential Learning Dashboard</li></ul>
 		</div>
 	</div>	
 	<div id="dhtmlgoodies_mainContainer">
 		<!-- ONE <UL> for each "room" -->
 		<div class="">
-			<p>Behaviorism</p>
+			<p>Career Exploration</p>
 			<ul style="height: 72px;" id="box1">
 			</ul>
 		</div>
 		<div class="">		
-			<p>Cognitivism</p>
+			<p>Gaining Experience</p>
 			<ul style="height: 72px;" id="box2"></ul>
 		</div>
 		
 		<div>
-		  <p >Constructivism</p>
+		  <p >Job Application Preperation</p>
 			<ul style="height: 72px;" id="box3"></ul>
 		</div>
 		
