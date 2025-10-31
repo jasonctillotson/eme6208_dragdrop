@@ -92,8 +92,8 @@ body{
 	/* END LEFT COLUMN CSS */
 	
 	#dhtmlgoodies_dragDropContainer .mouseover{	/* Mouse over effect DIV box in right column */
-		background-color:#E2EBED;
-		border:1px solid #317082;
+		background-color:#848f91;
+		border:2px solid #317082;
 	}
 	
 	/* Start main container CSS */
@@ -107,7 +107,7 @@ body{
 		margin-right:10px;
 		margin-bottom:10px;
 		margin-top:0px;
-		border:1px solid #999;
+		border:2px solid #999;
 
 		/* CSS HACK */
 		width: 172px;	/* IE 5.x */
@@ -124,7 +124,7 @@ body{
 		padding:0px;
 		padding-left:12px;
 		font-weight:bold;
-		background-color:#317082;	
+		background-color:#c75006;	
 		color:#FFF;	
 		margin-bottom:5px;
 	}
@@ -139,13 +139,14 @@ body{
 	}
 	
 	#dragContent{	/* Drag container */
-		position:absolute;
-		width:150px;
-		height:15px;
-		display:none;
-		margin:0px;
-		padding:0px;
-		z-index:2000;
+  		display: inline-block;
+  		padding: 10px 20px;
+  		border-radius: 6px;
+  		font-size: 16px;
+  		background-color: #2f40fa;
+  		cursor: grab;
+}
+
 	}
 
 	#dragDropIndicator{	/* DIV for the small arrow */
